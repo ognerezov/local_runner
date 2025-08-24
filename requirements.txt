@@ -1,0 +1,34 @@
+# ==============================================================
+# requirements.txt – Local Hugging Face model inference
+# ==============================================================
+# Core libraries
+torch>=2.0.0                  # PyTorch (CPU or GPU, see comment below)
+transformers>=4.41.0          # Hugging Face Transformers
+accelerate>=0.25.0            # Distributed inference helper
+huggingface_hub>=0.22.0       # Model & tokenizer hub
+sentencepiece>=0.1.99         # SentencePiece tokenizer (many models need it)
+einops>=0.6.1                 # Optional but handy for reshaping tensors
+tqdm>=4.66.0                  # Progress bars for data pipelines
+safetensors>=0.4.0            # Fast, secure tensor loading
+
+# Optional – quantized inference (4‑bit)
+# Uncomment the line below if you plan to use bitsandbytes (see README).
+# bitsandbytes>=0.41.0         # Enables 4‑bit and 8‑bit quantization
+
+# --------------------------------------------------------------
+# CUDA‑specific install (uncomment if you want GPU support)
+# --------------------------------------------------------------
+# For CUDA 11.8 (most common):
+#   pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 \
+#     --index-url https://download.pytorch.org/whl/cu118
+#
+# For CUDA 12.1:
+#   pip install torch==2.2.0+cu121 torchvision==0.17.0+cu121 \
+#     --index-url https://download.pytorch.org/whl/cu121
+#
+# If you’re on Linux with the system CUDA installation, just
+#   pip install torch torchvision
+# and let pip pick the right wheel for you.
+
+# ==============================================================
+
