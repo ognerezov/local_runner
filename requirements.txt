@@ -10,7 +10,7 @@ sentencepiece>=0.1.99         # SentencePiece tokenizer (many models need it)
 einops>=0.6.1                 # Optional but handy for reshaping tensors
 tqdm>=4.66.0                  # Progress bars for data pipelines
 safetensors>=0.4.0            # Fast, secure tensor loading
-
+diffusers>=0.35.1
 # Optional – quantized inference (4‑bit)
 # Uncomment the line below if you plan to use bitsandbytes (see README).
 # bitsandbytes>=0.41.0         # Enables 4‑bit and 8‑bit quantization
